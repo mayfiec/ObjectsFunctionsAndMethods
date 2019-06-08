@@ -38,6 +38,7 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle5()
 
     window.close_on_mouse_click()
 
@@ -117,14 +118,34 @@ def turtle4():
     clayton_1.left(100)
     clayton_1.backward(250)
     clayton_1.begin_fill()
-    clayton_1.draw_circle(25)
+    clayton_1.draw_circle(30)
     clayton_1.end_fill()
 
-def turtle5()
+
+def turtle5():
 
     clayton_2 = rg.SimpleTurtle('triangle')
+    clayton_2.pen = rg.Pen('aquamarine', 10)
 
-    clayton_2.pen = rg.Pen('blue', 15)
+    clayton_2.forward(100)
+    clayton_2.left(90)
+    clayton_2.forward(200)
+    clayton_2.left(100)
+    clayton_2.backward(250)
+
+    clayton_3 = rg.SimpleTurtle('triangle')
+    clayton_3.pen = rg.Pen('red', 15)
+
+    clayton_3.backward(100)
+    clayton_3.right(90)
+    clayton_3.backward(200)
+    clayton_3.left(100)
+    clayton_3.forward(250)
+    clayton_3.begin_fill()
+    clayton_3.draw_circle(40)
+    clayton_3.end_fill()
+
+
 ########################################################################
 #
 # DONE: 2.
@@ -206,7 +227,7 @@ def turtle5()
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #

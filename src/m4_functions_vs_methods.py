@@ -81,9 +81,9 @@ def main():
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
     try_methods()
+    try_methods_and_functions()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
-
 
     window.close_on_mouse_click()
 
@@ -178,7 +178,7 @@ def try_methods():
     #    (by calling this function).
     clayton_1 = rg.SimpleTurtle()
 
-    clayton_1.pen = rg.Pen('yellow', 20)
+    clayton_1.pen = rg.Pen('brown', 5)
 
     clayton_1.forward(150)
     clayton_1.left(90)
@@ -196,7 +196,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -206,7 +206,9 @@ def try_functions():
     # If you think it needs more, ** ASK FOR HELP. **
     # HINT: see   jump_and_move_turtle   above.
 
-    jump_and_move_turtle()
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
     ####################################################################
 
 
@@ -243,7 +245,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -252,10 +254,33 @@ def try_methods_and_functions():
     #   draw_many_squares
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
+    clayton_2 = rg.SimpleTurtle()
+
+    clayton_2.pen = rg.Pen('blue', 5)
+
+    clayton_2.backward(150)
+    clayton_2.speed = 1
+    draw_many_squares(clayton_2, 2, 100, 30)
+
+    clayton_2.speed = 5
+    clayton_2.pen = rg.Pen('red', 5)
+    draw_many_squares(clayton_2, 8, 300, 15)
+
+    clayton_2.speed = 100
+    clayton_2.pen = rg.Pen('red', 35)
+    draw_many_squares(clayton_2, 8, 100, 60)
+
+    clayton_2.pen = rg.Pen('black', 3)
+    clayton_2.backward(200)
+
+    clayton_2.draw_circle(30)
+
+    draw_many_squares(clayton_2, 1, 50, 0)
+
     ####################################################################
-
-
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
+
+
 main()

@@ -106,7 +106,6 @@ def turtle3():
 
 
 def turtle4():
-    """"""
 
     clayton_1 = rg.SimpleTurtle('square')
 

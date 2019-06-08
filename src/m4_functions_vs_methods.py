@@ -4,12 +4,12 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Clayton Mayfield.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 #   For objects that are CONSTRUCTED, we use the DOT notation
@@ -80,6 +80,7 @@ def main():
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
+    try_methods()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
@@ -172,9 +173,18 @@ def try_methods():
       -- backward  100 units
     """
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
+    clayton_1 = rg.SimpleTurtle()
+
+    clayton_1.pen = rg.Pen('yellow', 20)
+
+    clayton_1.forward(150)
+    clayton_1.left(90)
+    clayton_1.forward(50)
+    clayton_1.backward(100)
+
     ####################################################################
 
 
@@ -195,7 +205,8 @@ def try_functions():
     #   ** exactly 3 lines **
     # If you think it needs more, ** ASK FOR HELP. **
     # HINT: see   jump_and_move_turtle   above.
-    #
+
+    jump_and_move_turtle()
     ####################################################################
 
 

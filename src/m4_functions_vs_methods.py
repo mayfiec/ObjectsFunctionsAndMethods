@@ -254,6 +254,7 @@ def try_methods_and_functions():
     #   draw_many_squares
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
+
     clayton_2 = rg.SimpleTurtle()
 
     clayton_2.pen = rg.Pen('blue', 5)

@@ -107,6 +107,7 @@ def example2():
     # A RoseGraphics object is not associated with a window,
     # and hence are not drawn, until you ATTACH it to a window.
     # ------------------------------------------------------------------
+    
     point1.attach_to(window)
     point2.attach_to(window)
 
